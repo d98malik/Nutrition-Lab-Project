@@ -28,12 +28,12 @@ async function sendMessage() {
             if (response.ok) {
                 // Display the response message
                 const responseMessage = document.createElement('div');
-                responseMessage.textContent = `Chatbot: ${data.response}`;
+                responseMessage.textContent = `Nutrition Lab response: ${data.response}`;
                 outputBox.appendChild(responseMessage);
             } else {
                 // Handle errors
                 const errorMessage = document.createElement('div');
-                errorMessage.textContent = `Chatbot: ${data.response}`;
+                errorMessage.textContent = `Nutrition Lab response: ${data.response}`;
                 outputBox.appendChild(errorMessage);
             }
         } catch (error) {
