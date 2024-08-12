@@ -8,7 +8,7 @@ async function sendMessage() {
     if (message) {
         // Display the user message
         const userMessage = document.createElement('div');
-        userMessage.textContent = `You: ${message}`;
+        userMessage.textContent = `Food to analyse: ${message}`;
         outputBox.appendChild(userMessage);
         
         // Clear input box
